@@ -1,0 +1,904 @@
+<a class="skip" href="#main">Skip to main content</a>
+
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g-ring" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#55D4E1"/><stop offset=".5" stop-color="#3199CC"/><stop offset="1" stop-color="#004AAE"/></linearGradient>
+  </defs>
+  <symbol id="mark" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="url(#g-ring)"/><circle cx="50" cy="50" r="37" fill="#fff"/><circle cx="50" cy="50" r="25.7" fill="#000"/><circle cx="61.7" cy="35.2" r="12.8" fill="#fff"/></symbol>
+  <symbol id="px" viewBox="0 0 13 16"><g fill="currentColor"><circle cx="1.33" cy="1.33" r="1.33"/><circle cx="4.67" cy="1.33" r="1.33"/><circle cx="4.67" cy="4.67" r="1.33"/><circle cx="8" cy="4.67" r="1.33"/><circle cx="8" cy="8" r="1.33"/><circle cx="11.33" cy="8" r="1.33"/><circle cx="8" cy="11.33" r="1.33"/><circle cx="4.67" cy="11.33" r="1.33"/><circle cx="4.67" cy="14.67" r="1.33"/><circle cx="1.33" cy="14.67" r="1.33"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-compute" viewBox="0 0 24 24"><rect x="6.5" y="6.5" width="11" height="11" rx="1.5"/><rect x="10" y="10" width="4" height="4" rx=".5"/><path d="M10 3v3.5M14 3v3.5M10 17.5V21M14 17.5V21M3 10h3.5M3 14h3.5M17.5 10H21M17.5 14H21"/></symbol>
+  <symbol id="i-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.2"/><circle cx="5" cy="19" r="2.2"/><circle cx="19" cy="19" r="2.2"/><circle cx="12" cy="13" r="1.6"/><path d="M12 7.2v4.2M10.8 14.1l-4.3 3.4M13.2 14.1l4.3 3.4"/></symbol>
+  <symbol id="i-pulse" viewBox="0 0 24 24"><path d="M3 12h4l2.5-6 5 12 2.5-6h4"/></symbol>
+  <symbol id="i-storage" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7" ry="2.5"/><path d="M5 5.5v13c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-13M5 12c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 6v5.5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="m11 3 1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z"/><path d="m18.5 14.5.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01M11 7.5h6M11 16.5h6"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="b-x" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.78zm-1.08 16.18h1.7L7.4 4.73H5.58z"/></symbol>
+  <symbol id="b-in" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zm6.5 0h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5c0-1.2 0-2.75-1.68-2.75s-1.94 1.3-1.94 2.65V21h-4z"/></symbol>
+</svg>
+
+<div class="progress" aria-hidden="true"><span data-progress></span></div>
+<div class="cursor" aria-hidden="true" data-cursor-root><span class="cursor__dot"></span><span class="cursor__ring"><span class="cursor__label" data-cursor-label></span></span></div>
+
+<!-- ============ Header ============ -->
+<header class="head" id="head">
+  <div class="head__in">
+    <a class="head__logo" href="#top" aria-label="MoirAI Cloud, back to top">
+      <img src="{{A}}images/logo-h41.png" srcset="{{A}}images/logo-h41.png 1x, {{A}}images/logo-h82.png 2x" width="234" height="41" alt="MoirAI Cloud">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list" data-nav>
+        <li><a href="#platform" data-spy="platform">Platform</a></li>
+        <li><a href="#solutions" data-spy="solutions">Solutions</a></li>
+        <li><a href="#roadmap" data-spy="roadmap">Roadmap</a></li>
+        <li><a href="#compare" data-spy="compare">Compare</a></li>
+        <li><a href="#insights" data-spy="insights">Insights</a></li>
+        <li><a href="#faq" data-spy="faq">FAQ</a></li>
+      </ul>
+      <span class="nav__bar" aria-hidden="true" data-nav-bar></span>
+    </nav>
+    <div class="head__right">
+      <a class="status-chip" href="#roadmap"><span class="dot" aria-hidden="true"></span><span>Available today: Synaptix™ Platform</span></a>
+      <a class="btn btn--grad btn--mag head__cta" href="#contact"><span>Talk to Our Team</span></a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mmenu" aria-label="Open menu" data-burger><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <nav aria-label="Mobile">
+    <ol class="mmenu__list">
+      <li><a href="#platform"><span class="mono">01</span>Platform</a></li>
+      <li><a href="#solutions"><span class="mono">02</span>Solutions</a></li>
+      <li><a href="#roadmap"><span class="mono">03</span>Roadmap</a></li>
+      <li><a href="#compare"><span class="mono">04</span>Compare</a></li>
+      <li><a href="#insights"><span class="mono">05</span>Insights</a></li>
+      <li><a href="#faq"><span class="mono">06</span>FAQ</a></li>
+    </ol>
+  </nav>
+  <div class="mmenu__foot">
+    <a class="mmenu__mail" href="mailto:support@moiraicloud.ai">support@moiraicloud.ai</a>
+    <a class="btn btn--grad btn--block" href="#contact"><span>Talk to Our Team</span></a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ Hero ============ -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <canvas class="hero__grid" aria-hidden="true" data-hero-grid></canvas>
+  <div class="wrap hero__in">
+    <div class="hero__copy">
+      <p class="eyebrow">AI infrastructure operations</p>
+      <h1 class="hero__title" id="hero-title">Run compute, networking, storage and security from <span class="grad-text">one console.</span></h1>
+      <p class="hero__lead">Most teams answer one incident across four tools. Synaptix™ puts them in one place: ask a question in plain language, see the likely cause, and approve the fix before anything changes.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--grad btn--lg btn--mag" href="#contact"><span>Talk to Our Team</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--line btn--lg" href="#roadmap"><span>See what ships today</span></a>
+      </div>
+      <ul class="trust">
+        <li><svg class="ic"><use href="#i-server"/></svg>Built for data center, enterprise, regulated and edge</li>
+        <li><svg class="ic"><use href="#i-check"/></svg>Operator-approved AI actions</li>
+        <li><svg class="ic"><use href="#i-layers"/></svg>Open foundation</li>
+      </ul>
+    </div>
+
+    <div class="console" data-console>
+      <div class="console__bar">
+        <span class="console__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="mono">synaptix / operations</span>
+        <span class="tag-ill">Illustrative</span>
+      </div>
+      <div class="console__query">
+        <svg class="ic"><use href="#i-search"/></svg>
+        <span class="console__typed" data-typed aria-live="off"></span><span class="console__caret" aria-hidden="true"></span>
+      </div>
+      <div class="console__chips" role="group" aria-label="Example questions">
+        <button type="button" class="qchip is-on" data-q="0">Which hosts are near capacity?</button>
+        <button type="button" class="qchip" data-q="1">Why did storage latency spike?</button>
+        <button type="button" class="qchip" data-q="2">What changed on network segment B?</button>
+      </div>
+      <div class="console__answer" aria-live="polite" data-answer>
+        <p class="console__label mono">Answer</p>
+        <p class="console__text" data-answer-text>Three hosts in cluster A are close to their memory limit. host-07 is the tightest. Suggested fix: move two workloads to cluster B.</p>
+        <p class="console__need mono"><svg class="ic"><use href="#i-lock"/></svg>Waiting for operator approval</p>
+      </div>
+      <ul class="console__mods">
+        <li><span class="mono">Compute</span><svg class="spark" viewBox="0 0 100 24" preserveAspectRatio="none"><polyline data-spark points=""/></svg><span class="state state--ok">Healthy</span></li>
+        <li><span class="mono">Networking</span><svg class="spark" viewBox="0 0 100 24" preserveAspectRatio="none"><polyline data-spark points=""/></svg><span class="state state--ok">Healthy</span></li>
+        <li><span class="mono">Storage</span><svg class="spark" viewBox="0 0 100 24" preserveAspectRatio="none"><polyline data-spark points=""/></svg><span class="state state--warn">Investigating</span></li>
+        <li><span class="mono">Access &amp; policy</span><svg class="spark" viewBox="0 0 100 24" preserveAspectRatio="none"><polyline data-spark points=""/></svg><span class="state state--ok">Healthy</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 1. The problem ============ -->
+<section class="sec" id="problem" aria-labelledby="problem-title">
+  <div class="wrap">
+    <div class="sec-head sec-head--split rv">
+      <div>
+        <p class="eyebrow">The problem</p>
+        <h2 class="h2" id="problem-title">Your team shouldn't need four consoles to answer one question about its infrastructure.</h2>
+      </div>
+      <p class="sec-head__lead">Pick a question and watch it play out both ways, side by side.</p>
+    </div>
+
+    <div class="qa rv" data-qa>
+      <div class="qa__bar">
+        <div class="qa__chips" role="group" aria-label="Pick a question">
+          <button type="button" class="qa__chip" aria-pressed="false" data-qa-q="0">Why is the payroll VM slow?</button>
+          <button type="button" class="qa__chip" aria-pressed="false" data-qa-q="1">Which hosts are near capacity?</button>
+          <button type="button" class="qa__chip" aria-pressed="false" data-qa-q="2">What changed before the outage?</button>
+        </div>
+        <span class="tag-ill">Illustrative</span>
+      </div>
+      <div class="qa__grid">
+        <div class="qa__side qa__side--without">
+          <div class="qa__head">
+            <p class="qa__title">Without Synaptix™</p>
+            <dl class="qa__meters"><div><dt class="mono">Consoles opened</dt><dd data-qa-cons>0</dd></div><div><dt class="mono">Steps</dt><dd data-qa-steps>0</dd></div></dl>
+          </div>
+          <div class="cons4">
+            <div class="cons4__tabs" aria-hidden="true">
+              <span data-qa-tab><i style="--m:var(--m-compute)"></i>compute</span>
+              <span data-qa-tab><i style="--m:var(--m-network)"></i>network</span>
+              <span data-qa-tab><i style="--m:var(--m-storage)"></i>storage</span>
+              <span data-qa-tab><i style="--m:var(--m-security)"></i>security</span>
+            </div>
+            <ul class="cons4__body" data-qa-without aria-live="polite"><li class="cons4__idle">Pick a question to start.</li></ul>
+          </div>
+          <p class="qa__half" data-qa-half hidden></p>
+        </div>
+        <div class="qa__side qa__side--with">
+          <div class="qa__head">
+            <p class="qa__title qa__title--with">With Synaptix™</p>
+            <dl class="qa__meters"><div><dt class="mono">Consoles opened</dt><dd>1</dd></div><div><dt class="mono">Steps</dt><dd data-qa-steps2>0</dd></div></dl>
+          </div>
+          <div class="one">
+            <div class="one__query"><svg class="ic"><use href="#i-search"/></svg><span data-qa-typed></span><span class="console__caret" aria-hidden="true"></span></div>
+            <ul class="one__lines" data-qa-with aria-live="polite"></ul>
+            <p class="one__end" data-qa-end hidden></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="tiles__note mono">Counted from the product as it ships today. None of these numbers is a forecast.</p>
+    <div class="tiles">
+      <div class="tile rv" tabindex="0" aria-describedby="tile-1">
+        <p class="tile__n"><span data-count="5">5</span></p>
+        <p class="tile__l">Core modules in one console</p>
+        <ul class="tile__more" id="tile-1"><li>Compute &amp; Workloads</li><li>Networking</li><li>Storage</li><li>Observability</li><li>Security &amp; Governance</li></ul>
+        <span class="tile__bar" style="--v:1"></span>
+      </div>
+      <div class="tile rv" tabindex="0" aria-describedby="tile-2">
+        <p class="tile__n"><span data-count="4">4</span></p>
+        <p class="tile__l">Environment types it's built for</p>
+        <ul class="tile__more" id="tile-2"><li>Data centers</li><li>Enterprise private and hybrid</li><li>Regulated environments</li><li>Edge and distributed sites</li></ul>
+        <span class="tile__bar" style="--v:1"></span>
+      </div>
+      <div class="tile rv" tabindex="0" aria-describedby="tile-3">
+        <p class="tile__n"><span data-count="1">1</span><small>/5</small></p>
+        <p class="tile__l">Roadmap stages shipping now</p>
+        <ul class="tile__more" id="tile-3"><li class="is-live">Synaptix™ Platform: available</li><li>Multi-Site Management: in development</li><li>Predictive Operations: planned</li><li>Policy &amp; Resilience Automation: planned</li><li>Autonomous Operations: planned</li></ul>
+        <span class="tile__bar" style="--v:.2"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. Hub ============ -->
+<section class="sec sec--dark" id="platform" aria-labelledby="hub-title">
+  <div class="wrap">
+    <div class="sec-head sec-head--split rv">
+      <div>
+        <p class="eyebrow eyebrow--dark">Platform</p>
+        <h2 class="h2" id="hub-title">Five modules. One place where they meet.</h2>
+      </div>
+      <p class="sec-head__lead">Every module feeds the same picture. That's the picture the AI reads before it suggests anything.</p>
+    </div>
+    <div class="hub" data-hub>
+      <div class="hub__stage">
+        <svg class="hub__lines" viewBox="0 0 600 600" aria-hidden="true">
+          <defs><linearGradient id="g-wire" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="600" y2="600"><stop offset="0" stop-color="#55D4E1"/><stop offset="1" stop-color="#004AAE"/></linearGradient></defs>
+          <circle class="hub__orbit" cx="300" cy="300" r="216"/>
+          <g data-hub-paths></g>
+          <g data-hub-packets></g>
+        </svg>
+        <div class="hub__core" aria-hidden="true">
+          <span class="hub__glow"></span>
+          <svg viewBox="0 0 100 100"><use href="#mark"/></svg>
+          <span class="mono">Synaptix&#8482;</span>
+        </div>
+        <div class="hub__nodes" role="group" aria-label="Modules. Use the arrow keys to move between them.">
+          <button type="button" class="hnode" data-node="0" aria-pressed="true" style="--x:50%;--y:14%;--m:var(--m-compute)"><svg class="ic"><use href="#i-compute"/></svg><span class="hnode__name">Compute &amp; Workloads</span><svg class="hnode__metric" viewBox="0 0 60 16" preserveAspectRatio="none" aria-hidden="true"><polyline data-hub-spark points=""/></svg></button>
+          <button type="button" class="hnode" data-node="1" aria-pressed="false" tabindex="-1" style="--x:84.2%;--y:38.9%;--m:var(--m-network)"><svg class="ic"><use href="#i-network"/></svg><span class="hnode__name">Networking</span><svg class="hnode__metric" viewBox="0 0 60 16" preserveAspectRatio="none" aria-hidden="true"><polyline data-hub-spark points=""/></svg></button>
+          <button type="button" class="hnode" data-node="2" aria-pressed="false" tabindex="-1" style="--x:71.2%;--y:79.1%;--m:var(--m-storage)"><svg class="ic"><use href="#i-storage"/></svg><span class="hnode__name">Storage</span><span class="hnode__gauge" aria-hidden="true"><i style="--g:.62"></i></span></button>
+          <button type="button" class="hnode" data-node="3" aria-pressed="false" tabindex="-1" style="--x:28.8%;--y:79.1%;--m:var(--m-observe)"><svg class="ic"><use href="#i-pulse"/></svg><span class="hnode__name">Observability</span><svg class="hnode__metric" viewBox="0 0 60 16" preserveAspectRatio="none" aria-hidden="true"><polyline data-hub-spark points=""/></svg></button>
+          <button type="button" class="hnode" data-node="4" aria-pressed="false" tabindex="-1" style="--x:15.8%;--y:38.9%;--m:var(--m-security)"><svg class="ic"><use href="#i-shield"/></svg><span class="hnode__name">Security &amp; Governance</span><span class="hnode__bars" aria-hidden="true"><i style="--b:.9"></i><i style="--b:.6"></i><i style="--b:.75"></i><i style="--b:.4"></i></span></button>
+        </div>
+      </div>
+
+      <div class="hub__panel">
+        <div class="hub__item is-on" data-hub-item>
+          <div class="hub__top"><span class="badge badge--live">Available today</span><span class="mono hub__n">01 / 05</span></div>
+          <h3 class="hub__title">Compute &amp; Workloads</h3>
+          <ul class="ticks"><li>Provision new workloads from the screen you monitor them on</li><li>Manage and migrate what's already running</li><li>See usage per host and per workload</li></ul>
+          <div class="ask"><p class="ask__k mono">Ask Synaptix™</p><p class="ask__q">"Which hosts can take two more workloads?"</p><p class="ask__a" data-ask="host-03 and host-11 have the most free memory. Putting both on host-11 keeps cluster A balanced."></p></div>
+          <svg class="hub__viz" viewBox="0 0 280 70" aria-hidden="true"><g class="v-bars"><rect x="6" y="30" width="34" height="34"/><rect x="46" y="14" width="34" height="50"/><rect x="86" y="40" width="34" height="24"/><rect class="hot" x="126" y="6" width="34" height="58"/><rect x="166" y="26" width="34" height="38"/><rect x="206" y="44" width="34" height="20"/><rect x="246" y="34" width="28" height="30"/></g></svg>
+        </div>
+        <div class="hub__item" data-hub-item hidden>
+          <div class="hub__top"><span class="badge badge--live">Available today</span><span class="mono hub__n">02 / 05</span></div>
+          <h3 class="hub__title">Networking</h3>
+          <ul class="ticks"><li>Connectivity, segmentation and network services</li><li>Network policies set next to compute, not in a separate tool</li><li>Network state is part of every AI investigation</li></ul>
+          <div class="ask"><p class="ask__k mono">Ask Synaptix™</p><p class="ask__q">"Is segment B isolated from the guest network?"</p><p class="ask__a" data-ask="Yes. Policy seg-b-isolate blocks traffic from the guest VLANs. net.admin last changed it on Monday."></p></div>
+          <svg class="hub__viz" viewBox="0 0 280 70" aria-hidden="true"><g class="v-net"><path d="M30 35H110M110 35l60-22M110 35l60 22M170 13h80M170 57h80"/><circle cx="30" cy="35" r="7"/><circle class="hot" cx="110" cy="35" r="9"/><circle cx="170" cy="13" r="6"/><circle cx="170" cy="57" r="6"/><circle cx="250" cy="13" r="6"/><circle cx="250" cy="57" r="6"/></g></svg>
+        </div>
+        <div class="hub__item" data-hub-item hidden>
+          <div class="hub__top"><span class="badge badge--live">Available today</span><span class="mono hub__n">03 / 05</span></div>
+          <h3 class="hub__title">Storage</h3>
+          <ul class="ticks"><li>Provision storage next to the workloads that use it</li><li>Health and capacity in the same view as compute</li><li>Storage issues show up in context, not in a separate alert stream</li></ul>
+          <div class="ask"><p class="ask__k mono">Ask Synaptix™</p><p class="ask__q">"Which pool has the most free space?"</p><p class="ask__a" data-ask="Pool C has the most headroom. Pool B is the busiest; it serves the payroll workloads."></p></div>
+          <svg class="hub__viz" viewBox="0 0 280 70" aria-hidden="true"><g class="v-pools"><rect x="6" y="10" width="80" height="14" rx="2"/><rect class="fill" x="6" y="10" width="62" height="14" rx="2"/><rect x="100" y="10" width="80" height="14" rx="2"/><rect class="fill hot" x="100" y="10" width="72" height="14" rx="2"/><rect x="194" y="10" width="80" height="14" rx="2"/><rect class="fill" x="194" y="10" width="26" height="14" rx="2"/><text x="6" y="48">pool A</text><text x="100" y="48">pool B</text><text x="194" y="48">pool C</text></g></svg>
+        </div>
+        <div class="hub__item" data-hub-item hidden>
+          <div class="hub__top"><span class="badge badge--live">Available today</span><span class="mono hub__n">04 / 05</span></div>
+          <h3 class="hub__title">Observability</h3>
+          <ul class="ticks"><li>Health, metrics, logs and operational context together</li><li>Usage visibility across the estate</li><li>The data the AI reads before it suggests anything</li></ul>
+          <div class="ask"><p class="ask__k mono">Ask Synaptix™</p><p class="ask__q">"What did host-14 log in the last hour?"</p><p class="ask__a" data-ask="Two disk timeout warnings, at 09:12 and 09:14, both on pool B. Nothing else stands out."></p></div>
+          <svg class="hub__viz" viewBox="0 0 280 70" aria-hidden="true"><g class="v-log"><rect x="6" y="6" width="268" height="14" rx="2"/><rect class="hot" x="6" y="28" width="268" height="14" rx="2"/><rect x="6" y="50" width="268" height="14" rx="2"/><text x="14" y="17">09:10 info  vm start</text><text x="14" y="39">09:12 warn  disk timeout</text><text x="14" y="61">09:14 warn  disk timeout</text></g></svg>
+        </div>
+        <div class="hub__item" data-hub-item hidden>
+          <div class="hub__top"><span class="badge badge--live">Available today</span><span class="mono hub__n">05 / 05</span></div>
+          <h3 class="hub__title">Security &amp; Governance</h3>
+          <ul class="ticks"><li>Role-based access across every module</li><li>An audit trail for each change, AI recommendations included</li><li>Operational controls and policy management</li></ul>
+          <div class="ask"><p class="ask__k mono">Ask Synaptix™</p><p class="ask__q">"Who changed the firewall rules this week?"</p><p class="ask__a" data-ask="One change: net.admin edited rule fw-22 on Monday at 08:40. The approval is in the audit trail."></p></div>
+          <svg class="hub__viz" viewBox="0 0 280 70" aria-hidden="true"><g class="v-roles"><path class="shield" d="M30 6 52 14v16c0 14-9 24-22 30C17 54 8 44 8 30V14z"/><rect x="74" y="8" width="200" height="14" rx="2"/><rect x="74" y="28" width="200" height="14" rx="2"/><rect x="74" y="48" width="200" height="14" rx="2"/><text x="82" y="19">ops.lead     approve</text><text x="82" y="39">net.admin    change</text><text x="82" y="59">auditor      read</text></g></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. Solutions ============ -->
+<section class="sec" id="solutions" aria-labelledby="sol-title">
+  <div class="wrap">
+    <div class="sec-head sec-head--split rv">
+      <div>
+        <p class="eyebrow">Solutions</p>
+        <h2 class="h2" id="sol-title">Same platform. Different pressure points.</h2>
+      </div>
+      <p class="sec-head__lead">A data center team and a regulated bank don't lose sleep over the same things. Pick yours.</p>
+    </div>
+    <div class="sol" data-sol>
+      <div class="sol__sel" role="tablist" aria-label="Environments">
+        <button role="tab" type="button" class="selr" id="tab-dc" aria-controls="pan-dc" aria-selected="true"><span class="selr__n mono">01</span><span class="selr__name">Data Center</span><span class="selr__hook">Growth that outpaces power and people</span><span class="selr__bar" aria-hidden="true"><i></i></span></button>
+        <button role="tab" type="button" class="selr" id="tab-ent" aria-controls="pan-ent" aria-selected="false" tabindex="-1"><span class="selr__n mono">02</span><span class="selr__name">Enterprise IT</span><span class="selr__hook">Tooling that piled up over the years</span><span class="selr__bar" aria-hidden="true"><i></i></span></button>
+        <button role="tab" type="button" class="selr" id="tab-reg" aria-controls="pan-reg" aria-selected="false" tabindex="-1"><span class="selr__n mono">03</span><span class="selr__name">Regulated</span><span class="selr__hook">Every change has to be provable</span><span class="selr__bar" aria-hidden="true"><i></i></span></button>
+        <button role="tab" type="button" class="selr" id="tab-edge" aria-controls="pan-edge" aria-selected="false" tabindex="-1"><span class="selr__n mono">04</span><span class="selr__name">Edge</span><span class="selr__hook">Remote sites nobody can see</span><span class="selr__bar" aria-hidden="true"><i></i></span></button>
+      </div>
+
+      <div class="solp is-on" role="tabpanel" id="pan-dc" aria-labelledby="tab-dc">
+        <div class="solp__left">
+          <p class="solp__intro">Compute, storage, networking and tenant environments keep growing. Power, cost and capacity don't.</p>
+          <div class="ba" data-ba>
+            <div class="ba__side ba__before"><p class="mono">The challenge</p><p>Teams react to issues across several consoles, so finding the cause takes longer than fixing it.</p></div>
+            <div class="ba__side ba__after"><p class="mono">What Synaptix™ does</p><p>Management, monitoring, usage visibility and AI-assisted investigation in one place, with health shown in context.</p></div>
+            <span class="ba__handle" role="slider" tabindex="0" aria-label="Reveal what Synaptix does" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10" data-cursor="Drag"><span></span></span>
+          </div>
+          <ul class="outs">
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-layers"/></svg></span><strong>Less</strong><span>operational complexity</span></li>
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-eye"/></svg></span><strong>More</strong><span>infrastructure visibility</span></li>
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-server"/></svg></span><strong>Better</strong><span>use of resources</span></li>
+          </ul>
+        </div>
+        <div class="viz viz--rack">
+          <div class="viz__top"><p class="mono">Rack view</p><span class="tag-ill">Illustrative</span></div>
+          <div class="racks" data-racks></div>
+          <p class="viz__tip mono" data-rack-tip aria-live="polite">Hover or tap a server to inspect it.</p>
+        </div>
+      </div>
+
+      <div class="solp" role="tabpanel" id="pan-ent" aria-labelledby="tab-ent" hidden>
+        <div class="solp__left">
+          <p class="solp__intro">Years of virtualization and tooling have piled up. Licensing keeps rising and nobody owns the whole picture.</p>
+          <div class="ba" data-ba>
+            <div class="ba__side ba__before"><p class="mono">The challenge</p><p>Management is split across systems and teams, and every renewal deepens the dependence on one vendor.</p></div>
+            <div class="ba__side ba__after"><p class="mono">What Synaptix™ does</p><p>One environment for private and hybrid infrastructure, a phased way off legacy virtualization, and operational data that stays yours.</p></div>
+            <span class="ba__handle" role="slider" tabindex="0" aria-label="Reveal what Synaptix does" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10" data-cursor="Drag"><span></span></span>
+          </div>
+          <ul class="outs">
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-layers"/></svg></span><strong>Less</strong><span>platform dependence</span></li>
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-pulse"/></svg></span><strong>Less</strong><span>operational overhead</span></li>
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-shield"/></svg></span><strong>More</strong><span>infrastructure control</span></li>
+          </ul>
+        </div>
+        <div class="viz viz--org">
+          <div class="viz__top"><p class="mono">Ownership map</p><span class="tag-ill">Illustrative</span></div>
+          <svg class="org" viewBox="0 0 360 250" data-org aria-hidden="true">
+            <g class="org__links">
+              <path data-l="infra" d="M180 52V88H70V118"/><path data-l="net" d="M180 52V118"/><path data-l="apps" d="M180 52V88H290V118"/>
+              <path data-l="site1" d="M70 150V178H40V198"/><path data-l="site2" d="M70 150V178H110V198"/><path data-l="hybrid" d="M290 150V198"/>
+            </g>
+            <g class="org__n is-root"><rect x="120" y="20" width="120" height="32" rx="3"/><text x="180" y="41">Synaptix&#8482;</text></g>
+            <g class="org__n" data-b="infra" data-p="infra"><rect x="20" y="118" width="100" height="32" rx="3"/><text x="70" y="139">Infra team</text></g>
+            <g class="org__n" data-b="net" data-p="net"><rect x="130" y="118" width="100" height="32" rx="3"/><text x="180" y="139">Network</text></g>
+            <g class="org__n" data-b="apps" data-p="apps"><rect x="240" y="118" width="100" height="32" rx="3"/><text x="290" y="139">App owners</text></g>
+            <g class="org__n is-leaf" data-b="site1" data-p="infra site1"><rect x="6" y="198" width="68" height="30" rx="3"/><text x="40" y="218">Site 1</text></g>
+            <g class="org__n is-leaf" data-b="site2" data-p="infra site2"><rect x="80" y="198" width="68" height="30" rx="3"/><text x="114" y="218">Site 2</text></g>
+            <g class="org__n is-leaf" data-b="hybrid" data-p="apps hybrid"><rect x="250" y="198" width="80" height="30" rx="3"/><text x="290" y="218">Hybrid</text></g>
+          </svg>
+          <p class="viz__tip mono" data-org-tip>Hover a branch to trace who owns what.</p>
+        </div>
+      </div>
+
+      <div class="solp" role="tabpanel" id="pan-reg" aria-labelledby="tab-reg" hidden>
+        <div class="solp__left">
+          <p class="solp__intro">When an auditor asks who changed what and why, "check the other tool" isn't an answer.</p>
+          <div class="ba" data-ba>
+            <div class="ba__side ba__before"><p class="mono">The challenge</p><p>Access rules and change history live in different places, so proving control takes days of gathering.</p></div>
+            <div class="ba__side ba__after"><p class="mono">What Synaptix™ does</p><p>Role-based access, an audit trail on every change and policy-driven workflows, all on infrastructure you run privately.</p></div>
+            <span class="ba__handle" role="slider" tabindex="0" aria-label="Reveal what Synaptix does" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10" data-cursor="Drag"><span></span></span>
+          </div>
+          <ul class="outs">
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-lock"/></svg></span><strong>Role-based</strong><span>access control</span></li>
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-check"/></svg></span><strong>Every change</strong><span>in the audit trail</span></li>
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-server"/></svg></span><strong>Private</strong><span>infrastructure operations</span></li>
+          </ul>
+        </div>
+        <div class="viz viz--log">
+          <div class="viz__top"><p class="mono">Audit log · live</p><span class="tag-ill">Illustrative</span></div>
+          <ul class="alog" data-alog></ul>
+        </div>
+      </div>
+
+      <div class="solp" role="tabpanel" id="pan-edge" aria-labelledby="tab-edge" hidden>
+        <div class="solp__left">
+          <p class="solp__intro">Remote sites usually get the least attention and the oldest tooling.</p>
+          <div class="ba" data-ba>
+            <div class="ba__side ba__before"><p class="mono">The challenge</p><p>Every distributed site ends up with its own tools, and problems surface late because nobody can see them.</p></div>
+            <div class="ba__side ba__after"><p class="mono">What Synaptix™ does</p><p>The same visibility and management at the edge as in the core. Cross-site coordination comes with Multi-Site Management, which is in development.</p></div>
+            <span class="ba__handle" role="slider" tabindex="0" aria-label="Reveal what Synaptix does" aria-valuemin="0" aria-valuemax="100" aria-valuenow="10" data-cursor="Drag"><span></span></span>
+          </div>
+          <ul class="outs">
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-layers"/></svg></span><strong>One</strong><span>toolset for every site</span></li>
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-eye"/></svg></span><strong>Visible</strong><span>remote sites</span></li>
+            <li><span class="outs__ic"><svg class="ic"><use href="#i-network"/></svg></span><strong>Central</strong><span>management</span></li>
+          </ul>
+        </div>
+        <div class="viz viz--edge">
+          <div class="viz__top"><p class="mono">Distributed sites</p><span class="tag-ill">Illustrative</span></div>
+          <svg class="edgemap" viewBox="0 0 360 250" data-edge aria-hidden="true">
+            <path class="edgemap__land" d="M28 132c18-48 70-84 128-88 46-3 70 20 112 15 40-5 66 20 72 52 6 36-26 66-70 72-58 8-86-16-136-6-54 10-124-6-106-45z"/>
+            <g class="edgemap__links"><path id="el-1" d="M180 125L80 76"/><path id="el-2" d="M180 125L290 82"/><path id="el-3" d="M180 125L96 196"/><path id="el-4" d="M180 125L282 192"/></g>
+            <g class="edgemap__pings"><circle r="3.5"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#el-1"/></animateMotion></circle><circle r="3.5"><animateMotion dur="2.6s" begin=".4s" repeatCount="indefinite"><mpath href="#el-2"/></animateMotion></circle><circle r="3.5"><animateMotion dur="2s" begin=".8s" repeatCount="indefinite"><mpath href="#el-3"/></animateMotion></circle><circle r="3.5"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath href="#el-4"/></animateMotion></circle></g>
+            <g class="edgemap__nodes"><circle class="hubc" cx="180" cy="125" r="13"/><g data-site="Site north · healthy"><circle cx="80" cy="76" r="8"/><circle class="ring" cx="80" cy="76" r="8"/></g><g data-site="Site east · healthy"><circle cx="290" cy="82" r="8"/><circle class="ring" cx="290" cy="82" r="8"/></g><g data-site="Site south-west · one warning"><circle class="warn" cx="96" cy="196" r="8"/><circle class="ring" cx="96" cy="196" r="8"/></g><g data-site="Site south-east · healthy"><circle cx="282" cy="192" r="8"/><circle class="ring" cx="282" cy="192" r="8"/></g></g>
+          </svg>
+          <p class="viz__tip mono" data-edge-tip>Each site reports back to the core. Hover one.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. Synaptix CoS density visualizer ============ -->
+<section class="sec sec--dark" id="cos" aria-labelledby="cos-title">
+  <div class="wrap cos">
+    <div class="cos__copy rv">
+      <p class="eyebrow eyebrow--dark"><span>Synaptix™ CoS · Capacity of Servers You Own</span></p>
+      <h2 class="h2" id="cos-title">Less overhead per workload. More room on hardware you already paid for.</h2>
+      <p>Traditional virtual machines each carry their own overhead. Synaptix™ CoS uses a lighter way to run workloads, so less of every host goes to virtualization and more goes to the work. It has been demonstrated in lab and data center environments, and validation for wider deployment is still under way.</p>
+      <p class="cos__fine">[CONFIRM: product name "Synaptix™ CoS" (the site currently says "Synaptik™ Cell") and its availability status]</p>
+      <a class="btn btn--grad btn--mag" href="#contact" data-topic="Something else"><span>Ask about CoS</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="dens" data-dens>
+      <div class="dens__top">
+        <div class="seg" role="radiogroup" aria-label="Execution model">
+          <button type="button" role="radio" aria-checked="true" data-mode="vm">Traditional VMs</button>
+          <button type="button" role="radio" aria-checked="false" data-mode="cos">Synaptix™ CoS</button>
+        </div>
+        <span class="tag-ill">Illustrative, not a benchmark</span>
+      </div>
+      <label class="dens__range" data-cursor="Drag">
+        <span class="mono">Servers <output data-dens-n>6</output></span>
+        <input type="range" min="2" max="12" value="6" data-dens-range aria-label="Number of servers">
+      </label>
+      <div class="dens__hosts" data-dens-hosts></div>
+      <div class="dens__legend mono"><span><i class="k k--work"></i>Workload</span><span><i class="k k--ovh"></i>Overhead</span><span><i class="k k--free"></i>Free</span></div>
+      <p class="dens__out" aria-live="polite"><span class="mono">Workloads that fit</span><strong data-dens-out>24</strong></p>
+      <p class="dens__fine mono">Model: each host holds 12 cells. VM workload = 2 cells + 1 overhead cell. CoS workload = 2 cells, plus 1 shared overhead cell per host. [CONFIRM: real overhead ratio before publishing]</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. Why teams move (comparison + pillars) ============ -->
+<section class="sec" id="compare" aria-labelledby="compare-title">
+  <div class="wrap">
+    <div class="sec-head sec-head--split rv">
+      <div>
+        <p class="eyebrow">Why teams move</p>
+        <h2 class="h2" id="compare-title">Flip the switch and see what changes.</h2>
+      </div>
+      <div class="switch" data-switch>
+        <span class="mono" aria-hidden="true">Fragmented tools</span>
+        <button type="button" role="switch" aria-checked="false" aria-label="Show Synaptix instead of fragmented tools" class="switch__btn" data-switch-btn><span></span></button>
+        <span class="mono" aria-hidden="true">Synaptix™</span>
+      </div>
+    </div>
+    <div class="cmp" data-cmp>
+      <div class="cmp__row"><p class="cmp__k">Consoles to manage</p><p class="cmp__v"><svg class="ic ic-a"><use href="#i-x"/></svg><svg class="ic ic-b"><use href="#i-check"/></svg><span class="a">One per domain, four or more</span><span class="b">One</span></p></div>
+      <div class="cmp__row"><p class="cmp__k">Where visibility lives</p><p class="cmp__v"><svg class="ic ic-a"><use href="#i-x"/></svg><svg class="ic ic-b"><use href="#i-check"/></svg><span class="a">Spread across separate monitoring tools</span><span class="b">Health, metrics, logs and state in one view</span></p></div>
+      <div class="cmp__row"><p class="cmp__k">How investigations run</p><p class="cmp__v"><svg class="ic ic-a"><use href="#i-x"/></svg><svg class="ic ic-b"><use href="#i-check"/></svg><span class="a">By hand, tab by tab</span><span class="b">AI correlates the data and points to a likely cause</span></p></div>
+      <div class="cmp__row"><p class="cmp__k">Admin interfaces to learn</p><p class="cmp__v"><svg class="ic ic-a"><use href="#i-x"/></svg><svg class="ic ic-b"><use href="#i-check"/></svg><span class="a">One for each vendor</span><span class="b">One, with APIs for automation</span></p></div>
+      <div class="cmp__row"><p class="cmp__k">How processes are documented</p><p class="cmp__v"><svg class="ic ic-a"><use href="#i-x"/></svg><svg class="ic ic-b"><use href="#i-check"/></svg><span class="a">Wikis, tickets and memory</span><span class="b">Central workflows and an audit trail</span></p></div>
+      <div class="cmp__row"><p class="cmp__k">Licensing exposure</p><p class="cmp__v"><svg class="ic ic-a"><use href="#i-x"/></svg><svg class="ic ic-b"><use href="#i-check"/></svg><span class="a">Tied to one legacy virtualization vendor</span><span class="b">Open foundation and a phased path off it</span></p></div>
+    </div>
+
+    <div class="bento">
+      <article class="pillar pillar--wide rv">
+        <span class="pillar__ic"><svg class="ic"><use href="#i-spark"/></svg></span>
+        <h3>Integrated AI operations</h3>
+        <p>The AI isn't bolted on. It runs inside the operating environment, so it already knows your hosts, networks and storage when you ask it something.</p>
+        <p class="pillar__more">Ask "why is this slow?" and it reads the same metrics, logs and state your operators would, in seconds instead of tabs.</p>
+      </article>
+      <article class="pillar pillar--tall rv">
+        <span class="pillar__ic"><svg class="ic"><use href="#i-layers"/></svg></span>
+        <h3>Unified control</h3>
+        <p>Compute, networking, storage and monitoring through one connected layer.</p>
+        <p class="pillar__more">Provision, change and roll back from one screen, with one set of permissions.</p>
+      </article>
+      <article class="pillar rv">
+        <span class="pillar__ic"><svg class="ic"><use href="#i-server"/></svg></span>
+        <h3>Proven foundation</h3>
+        <p>Established infrastructure technologies sit underneath, so you modernize without a ground-up rebuild.</p>
+      </article>
+      <article class="pillar pillar--accent rv">
+        <span class="pillar__ic"><svg class="ic"><use href="#i-eye"/></svg></span>
+        <h3>Operator oversight</h3>
+        <p>The AI explains and recommends. People approve. Every decision is logged.</p>
+        <a class="link" href="#oversight">Try the approval flow<svg class="ic"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. Oversight demo ============ -->
+<section class="sec sec--dark" id="oversight" aria-labelledby="ov-title">
+  <div class="wrap ov">
+    <div class="ov__copy rv">
+      <p class="eyebrow eyebrow--dark">Operator oversight</p>
+      <h2 class="h2" id="ov-title">The AI recommends. You decide.</h2>
+      <p>Every AI action goes through the same loop. It investigates, plans and recommends. Then it stops and waits for a person.</p>
+      <p>Pick an incident, watch the steps, and make the call yourself. Approve or reject, the decision lands in the audit trail.</p>
+      <ul class="ov__legend">
+        <li><span class="mono">01</span>Investigate</li><li><span class="mono">02</span>Plan</li><li><span class="mono">03</span>Recommend</li><li><span class="mono">04</span>Your call</li>
+      </ul>
+      <button type="button" class="btn btn--line btn--dark" data-ov-reset><span>Run it again</span></button>
+    </div>
+
+    <div class="ovc" data-ov>
+      <div class="ovc__tabs" role="tablist" aria-label="Incident scenarios">
+        <button type="button" role="tab" id="ovt-0" aria-controls="ovc-body" aria-selected="true" data-ov-s="0">Storage latency on cluster B</button>
+        <button type="button" role="tab" id="ovt-1" aria-controls="ovc-body" aria-selected="false" tabindex="-1" data-ov-s="1">Host near memory limit</button>
+        <button type="button" role="tab" id="ovt-2" aria-controls="ovc-body" aria-selected="false" tabindex="-1" data-ov-s="2">Unplanned config change</button>
+      </div>
+      <div class="ovc__body" id="ovc-body" role="tabpanel" aria-labelledby="ovt-0">
+        <div class="ovc__top"><p class="mono" data-ov-title>Incident</p><span class="tag-ill">Illustrative</span></div>
+        <div class="ovc__flow">
+          <span class="ovc__rail" aria-hidden="true"><i data-ov-rail></i></span>
+          <ol class="ovc__steps">
+            <li data-ov-step><span class="ovc__n mono">01</span><div><h3>Investigate</h3><p data-ov-text aria-live="polite"></p><div class="evid" data-ov-evid></div></div></li>
+            <li data-ov-step><span class="ovc__n mono">02</span><div><h3>Plan</h3><p data-ov-text></p></div></li>
+            <li data-ov-step><span class="ovc__n mono">03</span><div><h3>Recommend</h3><p data-ov-text></p></div></li>
+            <li data-ov-step class="ovc__call"><span class="ovc__n mono">04</span><div><h3>Your call</h3>
+              <div class="ovc__btns">
+                <button type="button" class="btn btn--grad btn--lg" data-ov-act="approve" disabled><svg class="ic"><use href="#i-check"/></svg><span>Approve</span></button>
+                <button type="button" class="btn btn--line btn--dark btn--lg" data-ov-act="reject" disabled><svg class="ic"><use href="#i-x"/></svg><span>Reject</span></button>
+              </div>
+              <div class="ovc__result" data-ov-result aria-live="polite" hidden><span class="ovc__apply"><i></i></span><p></p></div>
+            </div></li>
+          </ol>
+        </div>
+      </div>
+      <div class="ovc__audit">
+        <div class="ovc__audit-h"><p class="mono">Audit trail</p><button type="button" class="link-btn mono" data-ov-clear>Clear log</button></div>
+        <ul class="ovc__log" data-ov-log aria-live="polite"><li class="ovc__empty">No decisions yet. Make a call above.</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. Roadmap ============ -->
+<section class="sec" id="roadmap" aria-labelledby="road-title">
+  <div class="rmap" data-rmap>
+    <div class="rmap__sticky">
+      <div class="wrap rmap__in">
+        <div class="rmap__side rv">
+          <p class="eyebrow">Roadmap</p>
+          <h2 class="h2" id="road-title">Start with what ships. Grow into the rest.</h2>
+          <p>One stage is available today. The rest are labeled exactly as they stand, and none has an announced date.</p>
+          <a class="btn btn--grad btn--mag" href="#contact"><span>Talk to Our Team</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="rmap__main">
+          <div class="rmap__view" data-rmap-view>
+            <div class="rmap__track" role="tablist" aria-label="Roadmap stages" data-rmap-track>
+              <button role="tab" type="button" class="rcard" id="rc-1" aria-controls="rp-1" aria-selected="true" data-cursor="Open">
+                <span class="rcard__seg rcard__seg--live" aria-hidden="true"></span><span class="rcard__dot rcard__dot--live" aria-hidden="true"></span>
+                <span class="rcard__n mono">01</span><span class="rcard__name">Synaptix™ Platform</span><span class="badge badge--live">Available today</span>
+                <svg class="rcard__art" viewBox="0 0 200 80" aria-hidden="true"><rect class="a-soft" x="10" y="8" width="56" height="24" rx="3"/><rect class="a-dark" x="72" y="8" width="56" height="24" rx="3"/><rect class="a-soft" x="134" y="8" width="56" height="24" rx="3"/><rect class="a-grad" x="40" y="44" width="120" height="28" rx="3"/><text x="100" y="62">One console</text></svg>
+              </button>
+              <button role="tab" type="button" class="rcard" id="rc-2" aria-controls="rp-2" aria-selected="false" tabindex="-1" data-cursor="Open">
+                <span class="rcard__seg rcard__seg--dev" aria-hidden="true"></span><span class="rcard__dot rcard__dot--dev" aria-hidden="true"></span>
+                <span class="rcard__n mono">02</span><span class="rcard__name">Multi-Site Management</span><span class="badge badge--dev">In development</span>
+                <svg class="rcard__art" viewBox="0 0 200 80" aria-hidden="true"><path class="a-wire" d="M70 40H40V14H24M70 40H24M70 40H40v26H24M130 40h46"/><rect class="a-soft" x="2" y="4" width="22" height="18" rx="2"/><rect class="a-soft" x="2" y="31" width="22" height="18" rx="2"/><rect class="a-soft" x="2" y="58" width="22" height="18" rx="2"/><rect class="a-grad" x="70" y="26" width="60" height="28" rx="3"/><rect class="a-soft" x="176" y="31" width="22" height="18" rx="2"/></svg>
+              </button>
+              <button role="tab" type="button" class="rcard" id="rc-3" aria-controls="rp-3" aria-selected="false" tabindex="-1" data-cursor="Open">
+                <span class="rcard__seg rcard__seg--plan" aria-hidden="true"></span><span class="rcard__dot rcard__dot--plan" aria-hidden="true"></span>
+                <span class="rcard__n mono">03</span><span class="rcard__name">Predictive Operations</span><span class="badge badge--plan">Planned</span>
+                <svg class="rcard__art" viewBox="0 0 200 80" aria-hidden="true"><rect class="a-soft" x="20" y="52" width="26" height="24"/><rect class="a-soft" x="56" y="40" width="26" height="36"/><rect class="a-dark" x="92" y="28" width="26" height="48"/><rect class="a-dash" x="128" y="16" width="26" height="60"/><rect class="a-dash" x="164" y="4" width="26" height="72"/></svg>
+              </button>
+              <button role="tab" type="button" class="rcard" id="rc-4" aria-controls="rp-4" aria-selected="false" tabindex="-1" data-cursor="Open">
+                <span class="rcard__seg rcard__seg--plan" aria-hidden="true"></span><span class="rcard__dot rcard__dot--plan" aria-hidden="true"></span>
+                <span class="rcard__n mono">04</span><span class="rcard__name">Policy &amp; Resilience Automation</span><span class="badge badge--plan">Planned</span>
+                <svg class="rcard__art" viewBox="0 0 200 80" aria-hidden="true"><rect class="a-dark" x="20" y="4" width="160" height="72" rx="4"/><rect class="a-row" x="32" y="14" width="136" height="16" rx="2"/><rect class="a-row" x="32" y="34" width="136" height="16" rx="2"/><rect class="a-row" x="32" y="54" width="136" height="14" rx="2"/><circle class="a-on" cx="156" cy="22" r="5"/><circle class="a-on" cx="156" cy="42" r="5"/><circle class="a-off" cx="144" cy="61" r="5"/></svg>
+              </button>
+              <button role="tab" type="button" class="rcard" id="rc-5" aria-controls="rp-5" aria-selected="false" tabindex="-1" data-cursor="Open">
+                <span class="rcard__seg rcard__seg--plan rcard__seg--end" aria-hidden="true"></span><span class="rcard__dot rcard__dot--plan" aria-hidden="true"></span>
+                <span class="rcard__n mono">05</span><span class="rcard__name">Autonomous Operations</span><span class="badge badge--plan">Planned</span>
+                <svg class="rcard__art" viewBox="0 0 200 80" aria-hidden="true"><rect class="a-guard" x="4" y="6" width="192" height="68" rx="4"/><rect class="a-soft" x="16" y="28" width="46" height="24" rx="3"/><rect class="a-soft" x="77" y="28" width="46" height="24" rx="3"/><rect class="a-grad" x="138" y="28" width="46" height="24" rx="3"/><path class="a-wire" d="M62 40h15M123 40h15"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="rmap__panels">
+            <div class="rpanel is-on" role="tabpanel" id="rp-1" aria-labelledby="rc-1">
+              <div><p class="mono rpanel__k">Stage 01</p><h3>Synaptix™ Platform</h3><p>The core operating platform: one console for your infrastructure, with AI that helps your team investigate and decide. This is what you can run today.</p></div>
+              <ul class="ticks ticks--light"><li>Unified management and workload operations</li><li>Monitoring and usage visibility</li><li>AI-assisted investigation in plain language</li><li>Operator-controlled remediation</li></ul>
+              <p class="rpanel__status rpanel__status--live">Available now</p>
+            </div>
+            <div class="rpanel" role="tabpanel" id="rp-2" aria-labelledby="rc-2" hidden>
+              <div><p class="mono rpanel__k">Stage 02</p><h3>Multi-Site Management</h3><p>Run Synaptix™ across several environments and see them as one estate.</p></div>
+              <ul class="ticks ticks--light"><li>Cross-site visibility</li><li>Coordinated management across locations</li><li>Resilience workflows between sites</li></ul>
+              <p class="rpanel__status rpanel__status--dev">In development, no release date announced [CONFIRM: any public timing]</p>
+            </div>
+            <div class="rpanel" role="tabpanel" id="rp-3" aria-labelledby="rc-3" hidden>
+              <div><p class="mono rpanel__k">Stage 03</p><h3>Predictive Operations</h3><p>From reacting to issues toward seeing them coming, with recommendations that get more proactive over time.</p></div>
+              <ul class="ticks ticks--light"><li>Capacity forecasting</li><li>Context-aware alerts</li><li>Impact analysis before a change</li></ul>
+              <p class="rpanel__status">Planned, no date announced</p>
+            </div>
+            <div class="rpanel" role="tabpanel" id="rp-4" aria-labelledby="rc-4" hidden>
+              <div><p class="mono rpanel__k">Stage 04</p><h3>Policy &amp; Resilience Automation</h3><p>Rules you set, applied consistently, with recovery built in.</p></div>
+              <ul class="ticks ticks--light"><li>Policy-aware controls</li><li>Recovery workflows</li><li>Audit trails that support compliance</li><li>Broader governed automation</li></ul>
+              <p class="rpanel__status">Planned, no date announced</p>
+            </div>
+            <div class="rpanel" role="tabpanel" id="rp-5" aria-labelledby="rc-5" hidden>
+              <div><p class="mono rpanel__k">Stage 05</p><h3>Autonomous Operations</h3><p>Platform agents that do more of the routine work, inside limits your team defines.</p></div>
+              <ul class="ticks ticks--light"><li>Agents that investigate, plan and recommend</li><li>Approved actions carried out inside guardrails you set</li><li>Operator oversight throughout</li></ul>
+              <p class="rpanel__status">Planned, no date announced</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. Readiness check ============ -->
+<section class="sec sec--paper" id="readiness" aria-labelledby="ready-title">
+  <div class="wrap ready">
+    <div class="ready__copy rv">
+      <p class="eyebrow">Modernization check</p>
+      <h2 class="h2" id="ready-title">Is now the time to move off VMware?</h2>
+      <p>Six yes-or-no questions. You'll get a score and a suggested next step.</p>
+      <p class="ready__fine mono">Nothing is sent anywhere. Your answers stay in this browser tab.</p>
+    </div>
+    <div class="quiz" data-quiz>
+      <ol class="quiz__list">
+        <li class="q"><p>Are your VMware renewals coming up in the next 12 months?</p><div class="yn" role="radiogroup" aria-label="Question 1"><button type="button" role="radio" aria-checked="false" data-v="1">Yes</button><button type="button" role="radio" aria-checked="false" data-v="0">No</button></div></li>
+        <li class="q"><p>Did your last renewal cost more than the one before?</p><div class="yn" role="radiogroup" aria-label="Question 2"><button type="button" role="radio" aria-checked="false" data-v="1">Yes</button><button type="button" role="radio" aria-checked="false" data-v="0">No</button></div></li>
+        <li class="q"><p>Do you run more than one site?</p><div class="yn" role="radiogroup" aria-label="Question 3"><button type="button" role="radio" aria-checked="false" data-v="1">Yes</button><button type="button" role="radio" aria-checked="false" data-v="0">No</button></div></li>
+        <li class="q"><p>Does your team switch between separate consoles for compute, network and storage?</p><div class="yn" role="radiogroup" aria-label="Question 4"><button type="button" role="radio" aria-checked="false" data-v="1">Yes</button><button type="button" role="radio" aria-checked="false" data-v="0">No</button></div></li>
+        <li class="q"><p>Do you have a documented migration plan?</p><div class="yn" role="radiogroup" aria-label="Question 5"><button type="button" role="radio" aria-checked="false" data-v="1">Yes</button><button type="button" role="radio" aria-checked="false" data-v="0">No</button></div></li>
+        <li class="q"><p>Does operational data need to stay on your own infrastructure?</p><div class="yn" role="radiogroup" aria-label="Question 6"><button type="button" role="radio" aria-checked="false" data-v="1">Yes</button><button type="button" role="radio" aria-checked="false" data-v="0">No</button></div></li>
+      </ol>
+      <div class="quiz__result">
+        <div class="ring">
+          <svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="g-ringq" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#55D4E1"/><stop offset="1" stop-color="#004AAE"/></linearGradient></defs><circle class="ring__bg" cx="60" cy="60" r="52"/><circle class="ring__fg" cx="60" cy="60" r="52" pathLength="100" data-quiz-ring/></svg>
+          <p class="ring__txt"><strong data-quiz-score>0</strong><span class="mono">of 6</span></p>
+        </div>
+        <div class="quiz__msg" aria-live="polite">
+          <p class="mono" data-quiz-progress>0 of 6 answered</p>
+          <h3 data-quiz-title>Answer all six to see your result.</h3>
+          <p data-quiz-text>The score counts how many of these pressures apply to you right now.</p>
+          <div class="quiz__ctas" data-quiz-ctas hidden>
+            <a class="btn btn--grad" href="#contact" data-quiz-primary><span>Talk to Our Team</span></a>
+            <a class="btn btn--line" href="https://moiraicloud.ai/blog/vmware-migration-playbook" target="_blank" rel="noopener" data-quiz-secondary><span>Read the Playbook</span></a>
+          </div>
+          <button type="button" class="link-btn mono" data-quiz-reset>Start over</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. Two ways in ============ -->
+<section class="sec" id="start" aria-labelledby="start-title">
+  <div class="wrap">
+    <div class="sec-head sec-head--split rv">
+      <div>
+        <p class="eyebrow">Two ways to get started</p>
+        <h2 class="h2" id="start-title">Plan a move, or start running today.</h2>
+      </div>
+      <p class="ways__ask">Where are you today?</p>
+    </div>
+    <div class="ways" data-ways>
+      <div class="way way--light" data-way>
+        <button type="button" class="way__toggle" aria-expanded="false" aria-controls="way-a">
+          <span class="way__k mono">Path A · Modernize</span>
+          <span class="way__q">Still on VMware or legacy virtualization</span>
+          <span class="badge badge--plan-solid">Playbook available</span>
+          <span class="way__go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+        </button>
+        <div class="way__body" id="way-a" hidden>
+          <p class="way__who"><strong>For:</strong> teams with renewals coming up, rising licence costs, or a stack nobody wants to touch, who need a move they can control.</p>
+          <ol class="journey">
+            <li><span class="mono">01</span><h3>Read the playbook</h3><p>A practical framework for a controlled migration.</p></li>
+            <li><span class="mono">02</span><h3>Map what you run</h3><p>Hosts, workloads and the tools around them.</p></li>
+            <li><span class="mono">03</span><h3>Plan the phases</h3><p>Decide what moves first and what waits.</p></li>
+            <li><span class="mono">04</span><h3>Move in steps</h3><p>One phase at a time, on your timeline.</p></li>
+          </ol>
+          <ul class="checks">
+            <li><svg class="ic"><use href="#i-check"/></svg>Practical migration framework</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>Workload migration tools</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>Executive guide for leadership</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>Less licensing exposure over time</li>
+          </ul>
+          <a class="btn btn--line btn--lg" href="https://moiraicloud.ai/blog/vmware-migration-playbook" target="_blank" rel="noopener"><span>Read the Playbook</span><svg class="ic"><use href="#i-arrow-ur"/></svg></a>
+        </div>
+      </div>
+      <div class="way way--dark" data-way>
+        <button type="button" class="way__toggle" aria-expanded="false" aria-controls="way-b">
+          <span class="way__k mono">Path B · Run on Synaptix™</span>
+          <span class="way__q">Ready to run on one console</span>
+          <span class="badge badge--live">Available today</span>
+          <span class="way__go" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></span>
+        </button>
+        <div class="way__body" id="way-b" hidden>
+          <p class="way__who"><strong>For:</strong> infrastructure teams who want one console for compute, networking, storage and monitoring, with AI they stay in charge of.</p>
+          <ol class="journey">
+            <li><span class="mono">01</span><h3>Talk to our team</h3><p>Tell us what you run and what gets in the way.</p></li>
+            <li><span class="mono">02</span><h3>Walk through your estate</h3><p>See where Synaptix™ fits, and where it doesn't yet.</p></li>
+            <li><span class="mono">03</span><h3>Start with the core</h3><p>The Synaptix™ Platform, available today.</p></li>
+            <li><span class="mono">04</span><h3>Grow with the roadmap</h3><p>Add stages as they ship.</p></li>
+          </ol>
+          <ul class="checks">
+            <li><svg class="ic"><use href="#i-check"/></svg>Unified management and workload operations</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>AI-assisted investigation in plain language</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>Operator-controlled remediation</li>
+            <li><svg class="ic"><use href="#i-check"/></svg>Role-based access and audit trails</li>
+          </ul>
+          <a class="btn btn--grad btn--lg btn--mag" href="#contact" data-topic="Running on Synaptix™ today"><span>Talk to Our Team</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. Founders ============ -->
+<!-- [CONFIRM: founder story. Why Robert and Daniel Twitchell started MoirAI Cloud and what they saw running infrastructure that led to Synaptix. Not shown on the page until confirmed.] -->
+<section class="sec" id="team" aria-labelledby="team-title">
+  <div class="wrap">
+    <div class="sec-head sec-head--split rv">
+      <div>
+        <p class="eyebrow">Founders</p>
+        <h2 class="h2" id="team-title">The people building MoirAI Cloud.</h2>
+      </div>
+      <p class="sec-head__lead">MoirAI Cloud is founder-led. The two people who started it run it today, as CEO and CRO.</p>
+    </div>
+    <div class="founders">
+      <article class="fcard" tabindex="0" data-tilt data-fcard aria-label="Robert Twitchell, Founder and CEO. Press Enter to show more.">
+        <figure class="fcard__img"><img src="{{A}}images/robert-twitchell.webp" width="600" height="600" loading="lazy" decoding="async" alt="Robert Twitchell"></figure>
+        <span class="fcard__sweep" aria-hidden="true"></span>
+        <div class="fcard__info">
+          <p class="fcard__role mono">Founder &amp; CEO</p>
+          <h3 class="fcard__name">Robert Twitchell</h3>
+          <div class="fcard__more">
+            <p class="fcard__bio ph">[CONFIRM: bio]</p>
+            <p class="fcard__quote ph">"[CONFIRM: quote]"</p>
+            <a class="fcard__in" href="https://www.linkedin.com/in/bob-twitchell-6648a55/" target="_blank" rel="noopener"><svg class="ic"><use href="#b-in"/></svg><span>LinkedIn</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="fcard" tabindex="0" data-tilt data-fcard aria-label="Daniel Twitchell, Founder and CRO. Press Enter to show more.">
+        <figure class="fcard__img"><img src="{{A}}images/daniel-twitchell.webp" width="600" height="600" loading="lazy" decoding="async" alt="Daniel Twitchell"></figure>
+        <span class="fcard__sweep" aria-hidden="true"></span>
+        <div class="fcard__info">
+          <p class="fcard__role mono">Founder &amp; CRO</p>
+          <h3 class="fcard__name">Daniel Twitchell</h3>
+          <div class="fcard__more">
+            <p class="fcard__bio ph">[CONFIRM: bio]</p>
+            <p class="fcard__quote ph">"[CONFIRM: quote]"</p>
+            <a class="fcard__in" href="https://www.linkedin.com/in/dan-twitchell-4600a344/" target="_blank" rel="noopener"><svg class="ic"><use href="#b-in"/></svg><span>LinkedIn</span></a>
+          </div>
+        </div>
+      </article>
+      <article class="askcard">
+        <p class="mono">Questions about your stack?</p>
+        <h3>Tell us what you run. We'll tell you straight where Synaptix™ fits, and where it doesn't yet.</h3>
+        <a class="btn btn--grad btn--lg btn--mag" href="#contact"><span>Talk to Our Team</span><svg class="ic"><use href="#i-arrow"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. Insights ============ -->
+<section class="sec" id="insights" aria-labelledby="ins-title">
+  <div class="wrap">
+    <div class="sec-head sec-head--split rv">
+      <div>
+        <p class="eyebrow">Insights</p>
+        <h2 class="h2" id="ins-title">Latest writing from the MoirAI team.</h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filter articles" data-filters>
+        <button type="button" aria-pressed="true" data-f="all">All</button>
+        <button type="button" aria-pressed="false" data-f="Platform">Platform</button>
+        <button type="button" aria-pressed="false" data-f="VMware">VMware</button>
+        <button type="button" aria-pressed="false" data-f="Operations">Operations</button>
+      </div>
+    </div>
+    <ul class="posts" data-posts>
+      <li class="post" data-cat="Operations" data-sum="Why the way you run private cloud matters as much as the platform you pick."><a href="https://moiraicloud.ai/blog/private-cloud-infrastructure-operating-model-2026" target="_blank" rel="noopener" data-cursor="View"><time class="mono" datetime="2026-10-12">Oct 12, 2026</time><span class="post__t">Private Cloud Infrastructure in 2026: Build an Operating Model, Not Just a Platform</span><span class="post__c mono">Operations</span><svg class="ic post__arr"><use href="#i-arrow-ur"/></svg></a></li>
+      <li class="post" data-cat="VMware" data-sum="For leaders weighing cost, licensing and risk before a move off VMware."><a href="https://moiraicloud.ai/blog/executive-guide-vmware-modernization" target="_blank" rel="noopener" data-cursor="View"><time class="mono" datetime="2026-10-09">Oct 9, 2026</time><span class="post__t">The Executive Guide to VMware Modernization</span><span class="post__c mono">VMware</span><svg class="ic post__arr"><use href="#i-arrow-ur"/></svg></a></li>
+      <li class="post" data-cat="VMware" data-sum="A step-by-step framework for planning a migration and keeping it under control."><a href="https://moiraicloud.ai/blog/vmware-migration-playbook" target="_blank" rel="noopener" data-cursor="View"><time class="mono" datetime="2026-10-09">Oct 9, 2026</time><span class="post__t">The VMware Migration Playbook: A Practical Framework for a Controlled Migration</span><span class="post__c mono">VMware</span><svg class="ic post__arr"><use href="#i-arrow-ur"/></svg></a></li>
+      <li class="post" data-cat="Platform" data-sum="What's in the platform, how the modules connect, and where the AI fits."><a href="https://moiraicloud.ai/blog/synaptix-platform-overview" target="_blank" rel="noopener" data-cursor="View"><time class="mono" datetime="2026-10-09">Oct 9, 2026</time><span class="post__t">Synaptix™ Platform Overview: The AI Infrastructure Operating Platform</span><span class="post__c mono">Platform</span><svg class="ic post__arr"><use href="#i-arrow-ur"/></svg></a></li>
+      <li class="post" data-cat="VMware" data-sum="A phased plan for replacing VMware infrastructure without a risky big-bang cutover."><a href="https://moiraicloud.ai/blog/how-to-replace-vmware-infrastructure-phased-plan" target="_blank" rel="noopener" data-cursor="View"><time class="mono" datetime="">[CONFIRM: date]</time><span class="post__t">How to Replace VMware Infrastructure: A Phased Plan</span><span class="post__c mono">VMware</span><svg class="ic post__arr"><use href="#i-arrow-ur"/></svg></a></li>
+      <li class="post" data-cat="Operations" data-sum="How a managed platform lets operations grow faster than the team running them."><a href="https://moiraicloud.ai/blog/managed-infrastructure-platform-scaling-operations" target="_blank" rel="noopener" data-cursor="View"><time class="mono" datetime="2026-10-05">Oct 5, 2026</time><span class="post__t">Managed Infrastructure Platforms: Scaling Operations Without Scaling Headcount</span><span class="post__c mono">Operations</span><svg class="ic post__arr"><use href="#i-arrow-ur"/></svg></a></li>
+    </ul>
+    <div class="peek" aria-hidden="true" data-peek><p class="peek__c mono" data-peek-c></p><p class="peek__s" data-peek-s></p><p class="peek__r mono">Read time [CONFIRM: read time]</p></div>
+    <p class="posts__all"><a class="link" href="https://moiraicloud.ai/resources" target="_blank" rel="noopener">All Resources<svg class="ic"><use href="#i-arrow-ur"/></svg></a></p>
+  </div>
+</section>
+
+<!-- ============ 12. FAQ ============ -->
+<section class="sec sec--paper" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faqw">
+    <div class="faqw__side rv">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="h2" id="faq-title">Before you get started.</h2>
+      <label class="search">
+        <svg class="ic"><use href="#i-search"/></svg>
+        <span class="sr-only">Search questions</span>
+        <input type="search" placeholder="Search questions" autocomplete="off" data-faq-search>
+      </label>
+      <p class="mono faq-count" aria-live="polite" data-faq-count>10 questions</p>
+    </div>
+    <div class="faqs" data-faqs>
+      <div class="faq is-open"><h3><button type="button" aria-expanded="true" aria-controls="fa-1" id="fq-1" data-cursor="Open"><span>Is Synaptix™ available today?</span><i class="pm" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa-1" role="region" aria-labelledby="fq-1"><div><p>Yes. The core platform is available now: unified management, workload operations, monitoring, usage visibility and AI-assisted operations. Multi-Site Management is in development. Predictive Operations, Policy &amp; Resilience Automation and Autonomous Operations are planned, and we label them that way.</p></div></div></div>
+      <div class="faq"><h3><button type="button" aria-expanded="false" aria-controls="fa-2" id="fq-2" data-cursor="Open"><span>Will the AI change my infrastructure on its own?</span><i class="pm" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa-2" role="region" aria-labelledby="fq-2"><div><p>No. It investigates, explains what it found and recommends a fix. A person approves the change before it runs. Agents that act inside guardrails you set are a planned roadmap stage, not something that ships today.</p></div></div></div>
+      <div class="faq"><h3><button type="button" aria-expanded="false" aria-controls="fa-3" id="fq-3" data-cursor="Open"><span>How are AI actions approved?</span><i class="pm" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa-3" role="region" aria-labelledby="fq-3"><div><p>Each recommendation shows what the AI found, what it wants to change and why. An operator approves or rejects it, and the decision is written to the audit trail either way. [CONFIRM: who can approve, e.g. role-based approval rules]</p></div></div></div>
+      <div class="faq"><h3><button type="button" aria-expanded="false" aria-controls="fa-4" id="fq-4" data-cursor="Open"><span>Do we have to replace everything we run?</span><i class="pm" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa-4" role="region" aria-labelledby="fq-4"><div><p>No. Synaptix™ is built on established infrastructure technologies, which keeps things interoperable while you modernize. Teams move in phases rather than rebuilding from scratch.</p></div></div></div>
+      <div class="faq"><h3><button type="button" aria-expanded="false" aria-controls="fa-5" id="fq-5" data-cursor="Open"><span>How is Synaptix™ deployed?</span><i class="pm" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa-5" role="region" aria-labelledby="fq-5"><div><p>[CONFIRM: deployment model, e.g. on your own hardware, in a private cloud, or managed by MoirAI Cloud]. Tell us what you run today and we'll explain how it would sit in your environment.</p></div></div></div>
+      <div class="faq"><h3><button type="button" aria-expanded="false" aria-controls="fa-6" id="fq-6" data-cursor="Open"><span>Does our data stay on our infrastructure?</span><i class="pm" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa-6" role="region" aria-labelledby="fq-6"><div><p>[CONFIRM: where operational data and AI processing live]. Synaptix™ is built for private infrastructure operations, including regulated environments.</p></div></div></div>
+      <div class="faq"><h3><button type="button" aria-expanded="false" aria-controls="fa-7" id="fq-7" data-cursor="Open"><span>Can you help us move off VMware?</span><i class="pm" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa-7" role="region" aria-labelledby="fq-7"><div><p>Yes, and it's one of the most common places teams start. <a href="https://moiraicloud.ai/blog/vmware-migration-playbook" target="_blank" rel="noopener">The VMware Migration Playbook</a> lays out a practical framework for a controlled migration.</p></div></div></div>
+      <div class="faq"><h3><button type="button" aria-expanded="false" aria-controls="fa-8" id="fq-8" data-cursor="Open"><span>What support do we get during a migration?</span><i class="pm" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa-8" role="region" aria-labelledby="fq-8"><div><p>[CONFIRM: migration support MoirAI Cloud provides, e.g. planning sessions, hands-on help, support hours]. The playbook covers the framework; our team walks through how it applies to you.</p></div></div></div>
+      <div class="faq"><h3><button type="button" aria-expanded="false" aria-controls="fa-9" id="fq-9" data-cursor="Open"><span>What is Synaptix™ CoS, and can we use it now?</span><i class="pm" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa-9" role="region" aria-labelledby="fq-9"><div><p>It's our compute technology for running workloads with less overhead than traditional VMs. It has been demonstrated in lab and data center environments, and integration and validation for wider deployment are still going on. Results vary with workload, configuration and environment.</p></div></div></div>
+      <div class="faq"><h3><button type="button" aria-expanded="false" aria-controls="fa-10" id="fq-10" data-cursor="Open"><span>How do we start?</span><i class="pm" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa-10" role="region" aria-labelledby="fq-10"><div><p>Send a message with the form below or email <a href="mailto:support@moiraicloud.ai">support@moiraicloud.ai</a>. Tell us what you run and what's in the way, and we'll come back with how Synaptix™ would fit.</p></div></div></div>
+      <p class="faq-empty" hidden data-faq-empty>No questions match that. Try "VMware", "AI" or "data", or <a href="#contact">ask us directly</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. Let's talk banner ============ -->
+<section class="talk" aria-labelledby="talk-title" data-talk>
+  <a class="talk__link" href="#contact">
+    <span class="talk__grid" aria-hidden="true"></span>
+    <h2 class="talk__title" id="talk-title">
+      <span class="talk__arrows talk__arrows--l" aria-hidden="true"><svg><use href="#px"/></svg><svg><use href="#px"/></svg><svg><use href="#px"/></svg></span>
+      <span class="talk__line">Let's talk</span>
+      <span class="talk__line">infrastructure</span>
+      <span class="talk__arrows talk__arrows--r" aria-hidden="true"><svg><use href="#px"/></svg><svg><use href="#px"/></svg><svg><use href="#px"/></svg></span>
+    </h2>
+    <span class="talk__eye" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#mark"/></svg></span>
+    <span class="talk__bars" aria-hidden="true"><i style="--h:80%"></i><i style="--h:56%"></i><i style="--h:30%"></i><i style="--h:14%"></i><i style="--h:56%"></i><i style="--h:80%"></i></span>
+    <span class="talk__cta mono">Open the contact form<svg class="ic"><use href="#i-arrow"/></svg></span>
+  </a>
+</section>
+
+<!-- ============ 14. Contact ============ -->
+<section class="sec sec--dark contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap contact__in">
+    <div class="contact__info">
+      <p class="eyebrow eyebrow--dark">Contact</p>
+      <h2 class="h2" id="contact-title">Tell us what you're running.</h2>
+      <p>We'll reply with how Synaptix™ would fit, what's available now and what's still on the roadmap.</p>
+      <a class="contact__mail ulink" href="mailto:support@moiraicloud.ai">support@moiraicloud.ai</a>
+      <ul class="contact__social">
+        <li><a class="ulink" href="https://www.linkedin.com/company/moirai-cloud/about/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a class="ulink" href="https://x.com/MoirAICloud" target="_blank" rel="noopener">X</a></li>
+        <li><a class="ulink" href="https://www.instagram.com/moirai.cloud/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="contact__form">
+      <form class="form" id="contact-form" action="{{FORM_ACTION}}" method="post" data-mode="{{FORM_MODE}}" novalidate>
+        <!--WP:contact-fields-->
+        <p class="form__status" id="form-status" role="status"><!--WP:contact-status--></p>
+        <div class="fl">
+          <input id="f-name" name="name" type="text" autocomplete="name" required placeholder=" " aria-describedby="e-name">
+          <label for="f-name">Your name *</label>
+          <span class="fl__err" id="e-name"></span>
+        </div>
+        <div class="fl">
+          <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" required placeholder=" " aria-describedby="e-email">
+          <label for="f-email">Work email *</label>
+          <span class="fl__err" id="e-email"></span>
+        </div>
+        <div class="fl fl--half">
+          <input id="f-company" name="company" type="text" autocomplete="organization" placeholder=" ">
+          <label for="f-company">Company</label>
+        </div>
+        <div class="fl fl--half fl--select">
+          <select id="f-topic" name="topic">
+            <option value="">Choose one</option>
+            <option>Running on Synaptix™ today</option>
+            <option>Planning a VMware move</option>
+            <option>Multi-site</option>
+            <option>Something else</option>
+          </select>
+          <label for="f-topic">What are you working on?</label>
+        </div>
+        <div class="fl">
+          <textarea id="f-message" name="message" rows="4" maxlength="1000" required placeholder=" " aria-describedby="e-message f-count"></textarea>
+          <label for="f-message">What would you like to discuss? *</label>
+          <span class="fl__count mono" id="f-count" data-count-msg>0 / 1000</span>
+          <span class="fl__err" id="e-message"></span>
+        </div>
+        <div class="hp" aria-hidden="true"><label for="f-website">Leave this empty</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <button class="btn btn--grad btn--lg btn--block" type="submit" data-submit><span>Send message</span></button>
+        <p class="form__fine">Fields marked * are required. We only use your details to reply.</p>
+      </form>
+      <div class="form-done" id="form-done" tabindex="-1" hidden>
+        <span class="form-done__ic"><svg class="ic"><use href="#i-check"/></svg></span>
+        <h3 id="form-done-title">Thanks.</h3>
+        <p id="form-done-text"></p>
+        <button class="link-btn mono" type="button" data-form-reset>Write another message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 15. Footer ============ -->
+<footer class="foot" data-foot>
+  <div class="wrap">
+    <nav class="foot__nav" aria-label="Footer">
+      <a class="ulink" href="#platform">Platform</a><a class="ulink" href="#solutions">Solutions</a><a class="ulink" href="#roadmap">Roadmap</a><a class="ulink" href="#compare">Compare</a><a class="ulink" href="#insights">Insights</a><a class="ulink" href="#faq">FAQ</a>
+    </nav>
+  </div>
+  <div class="foot__brand">
+    <span class="checker checker--tl" aria-hidden="true" data-checker><i></i><i></i><i></i><i></i></span>
+    <a class="foot__logo" href="#top" data-top aria-label="MoirAI Cloud, back to top"><img src="{{A}}images/logo-h82.png" width="467" height="82" loading="lazy" alt=""></a>
+    <p class="foot__line">Makers of Synaptix™, the AI infrastructure operating platform.</p>
+    <span class="checker checker--br" aria-hidden="true" data-checker><i></i><i></i><i></i><i></i></span>
+  </div>
+  <div class="wrap foot__bar">
+    <p>© <span data-year>2026</span> MoirAI Cloud. All rights reserved.</p>
+    <a class="foot__top ulink" href="#top" data-top>Back to top<svg class="ic"><use href="#i-up"/></svg></a>
+  </div>
+</footer>
+
+<button class="totop" type="button" aria-label="Back to top" data-totop>
+  <svg class="totop__ring" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="23"/><circle class="totop__bar" cx="26" cy="26" r="23" pathLength="100"/></svg>
+  <svg class="ic"><use href="#i-up"/></svg>
+</button>
